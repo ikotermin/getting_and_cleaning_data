@@ -1,0 +1,25 @@
+x_train: the variable resulting from read.table on x_train_file 
+
+y_train: the variable resulting from read.table on y_train_file 
+
+subject_train: the variable resulting from read.table on subject_train_file 
+
+x_test: the variable resulting from read.table on x_test_file 
+
+y_test: the variable resulting from read.table on y_test_file 
+
+subject_test: the variable resulting from read.table on subject_test_file 
+
+x_data: merged x_train and x_test by rbind
+
+y_data: merged y_train and y_test by rbind
+
+subject_data: merged subject_train and subject_test by rbind
+
+features: read.table on feaures_file with colClasses defined as "character"
+
+features_mean_std: selection of mean and std on the features variable
+
+all_data: cbind merges x_data, y_data and subject_data variables
+
+tidy_data_averages: a new data frame that shows the average for each variable, each activity and each subject
